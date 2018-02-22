@@ -19,7 +19,6 @@ module.exports = function getZerosCount(number, base) {
         }
     }
 
-
     for (let prime in multipleSet){
         result[prime] = Math.floor(getPrimeMultiplierCount(number, prime) / multipleSet[prime])
     }
@@ -40,5 +39,4 @@ module.exports = function getZerosCount(number, base) {
     }
 
     return Object.values(result).sort((a, b) => a - b)[0];
-
 };
